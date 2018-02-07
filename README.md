@@ -1,0 +1,2 @@
+# Weeabot
+A Discord bot.

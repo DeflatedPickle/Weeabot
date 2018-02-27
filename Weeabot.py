@@ -4,7 +4,7 @@ import discord
 from discord.ext import commands
 
 description = ""
-startup_extentions = []
+startup_extentions = ["cogs.admin_commands"]
 
 bot = commands.Bot(command_prefix=commands.when_mentioned_or("owo"), description=description)
 
@@ -12,6 +12,7 @@ bot = commands.Bot(command_prefix=commands.when_mentioned_or("owo"), description
 @bot.event
 async def on_ready():
     await bot.change_presence(game=discord.Game(name="Customer Service"))
+    print("Yaaawn!")
 
 
 def load_credentials():

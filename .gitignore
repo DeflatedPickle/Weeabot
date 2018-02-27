@@ -99,3 +99,12 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+# Other files
+credentials.json
